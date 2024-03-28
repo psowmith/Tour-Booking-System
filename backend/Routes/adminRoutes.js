@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const adminController=require("../Controllers/adminController");
+router.get('/data', adminController.adminData);
+router.get('/newUser', adminController.newUser);
+router.get('/allUsers', adminController.allUsers);
+router.put('/updateUser', adminController.updateUser);
+router.get('/tourData', adminController.tourData);
+router.put('/updateTour', adminController.updateTour);
+module.exports = router;
