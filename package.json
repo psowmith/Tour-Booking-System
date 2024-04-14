@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon backend/Server.js",
     "client": "npm start --prefix frontend",
-    "dev": "npm run start & npm run client"
+    "dev": "chmod +x node_modules/.bin/nodemon && npm run start & npm run client"
   },
   "author": "",
   "license": "ISC",
